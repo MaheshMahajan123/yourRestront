@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "150133980542",
+    "firebase_url": "https://yoursrestront.firebaseio.com",
+    "project_id": "yoursrestront",
+    "storage_bucket": "yoursrestront.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150133980542:android:55e9d64a54fb9a17",
+        "android_client_info": {
+          "package_name": "com.example.yoursretront"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150133980542-20b6cen7igaj4ggmces28er46se8ikm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yoursretront",
+            "certificate_hash": "4c32ae949a5729349d0eebd4e6adeaf5ca616c24"
+          }
+        },
+        {
+          "client_id": "150133980542-1mj6rjb4gj65v58skt58n7641hphneir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB10kxGiqnsbs2lbExcoyqqVYnnE1M2gnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150133980542-1mj6rjb4gj65v58skt58n7641hphneir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

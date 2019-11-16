@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose file" />
+
+    <EditText
+        android:id="@+id/edit_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/button_choose_image"
+        android:hint="Enter Item name" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="393dp"
+        android:layout_height="481dp"
+        android:layout_above="@id/progress_bar"
+        android:layout_below="@id/edit_text_file_name"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="3dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_upload"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_choose_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Item Price"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/discription"
+        android:layout_width="215dp"
+        android:layout_height="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/price"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Discription"
+        android:inputType="textMultiLine" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/Crimson">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-veg ONLY"
+            android:textColor="@color/Crimson"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/nonveg"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/Crimson"
+            android:text="CheckBox" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@color/Crimson">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drinks ONLY"
+            android:textColor="@color/Crimson"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/drinks"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/DeepSkyBlue"
+            android:text="Drinks"
+            android:textSize="22dp" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

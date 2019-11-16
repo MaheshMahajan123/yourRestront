@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorpink"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="426dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/colorpink"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="WELCOME TO YOUR       "
+            android:textColor="@color/DarkBlue"
+            android:textSize="35dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="RE$TRONT"
+            android:textColor="@color/DarkSlateBlue"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="311dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundbutton"
+            android:fontFamily="sans-serif"
+            android:hint="   Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/common_google_signin_btn_text_light_focused" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="307dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundbutton"
+                android:fontFamily="sans-serif"
+                android:hint="   Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/common_google_signin_btn_text_light_focused" />
+
+            <TextView
+                android:id="@+id/eye"
+                android:layout_width="47dp"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="90dp"
+                android:background="@drawable/ic_red_eye24dp"
+                android:paddingTop="10dp"
+                android:text="SHOW"
+                android:textColor="@color/Aquamarine"
+                android:textSize="1dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="CheckBox"
+            android:textColor="@color/Yellow" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="154dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundbutton"
+            android:text="login"
+            android:textAllCaps="false"
+            android:textColor="@color/common_google_signin_btn_text_light_focused"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="295dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/textViewSignup"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/colorpink"
+            android:padding="15dp"
+            android:text=" Don't Have Account? Sign Up"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/background_light"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

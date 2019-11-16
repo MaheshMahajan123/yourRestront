@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pagerrr"
+                android:layout_width="366dp"
+                android:layout_height="361dp"
+                android:background="@mipmap/q4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layouttt">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layouttt"
+                    android:layout_width="411dp"
+                    android:layout_height="28dp"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabMaxWidth="10dp"></com.google.android.material.tabs.TabLayout>
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <LinearLayout
+                android:layout_width="401dp"
+                android:layout_height="361dp"
+                android:layout_marginBottom="16dp"
+                android:background="@mipmap/q4"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check Your Offers"
+                    android:textAlignment="center"
+                    android:textColor="@color/Bisque"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="@dimen/mr_controller_volume_group_list_padding_top"
+                    android:background="@mipmap/b1"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/b1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="90dp"
+                            android:background="@mipmap/w0"
+                            android:text="50% Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="20dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="110dp"
+                            android:layout_height="88dp"
+                            android:background="@mipmap/b1"
+                            android:src="@mipmap/fifty" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/b1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="90dp"
+                            android:background="@mipmap/w0"
+                            android:text="40% Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="20dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circle1"
+                            android:layout_width="110dp"
+                            android:layout_height="88dp"
+                            android:background="@mipmap/b1"
+                            android:src="@mipmap/foty" />
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="@dimen/mr_controller_volume_group_list_padding_top"
+                    android:background="@mipmap/b1"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/b1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="90dp"
+                            android:background="@mipmap/w0"
+                            android:text="20% Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="20dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="110dp"
+                            android:layout_height="88dp"
+                            android:background="@mipmap/b1"
+                            android:src="@mipmap/image" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="115dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/b1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="90dp"
+                            android:background="@mipmap/w0"
+                            android:text="10% Off"
+                            android:textAlignment="center"
+                            android:textColor="@color/Black"
+                            android:textSize="20dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circl"
+                            android:layout_width="110dp"
+                            android:layout_height="88dp"
+                            android:background="@mipmap/b1"
+                            android:src="@mipmap/download10" />
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
